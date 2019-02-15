@@ -20,3 +20,10 @@ class InstagramClient(OAuth2):
     authorization_url = "/oauth/authorize"
     token_url = "/oauth/access_token"
     scope_sep = " "
+
+
+class FitbitClient(OAuth2):
+    site = "https://api.fitbit.com"
+    authorization_url = "/oauth2/authorize"
+    token_url = "/oauth2/token"
+    scope_sep = " "
